@@ -7,8 +7,7 @@ import { Link } from 'react-router-dom';
 import { FaHeart } from 'react-icons/fa';
 
 import img from '../img/tv1.avif';
-import img1 from '../img/sweatshirt.avif';
-import img2 from '../img/tshrit.avif';
+
 import img3 from '../img/ring.jpg';
 // import img4 from '../img/all.jpg';
 
