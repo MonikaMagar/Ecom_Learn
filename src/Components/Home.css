@@ -1,0 +1,209 @@
+
+
+.container {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+
+/* Category Styles */
+
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100px;
+}
+
+.category img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 2, 3);
+}
+
+.category:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tag {
+  margin-top: 10px; 
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* Card Container */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s, transform 0.2s;
+  background-color: #fff;
+  overflow: hidden; 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #f0c14b;
+  border-color: #a88734;
+}
+
+.btn-primary:hover {
+  background-color: #ddb347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+}
+
+/* Responsive design for category and cards */
+@media (max-width: 768px) {
+  .row-cols-md-3 > .col {
+    margin-bottom: 20px;
+  }
+
+  .category {
+    width: 80px; 
+    height: 80px; 
+  }
+
+  .card-title {
+    font-size: 1.1rem;  
+  }
+
+  .card-text {
+    font-size: 0.9rem; 
+  }
+}
+
+.offers-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+}
+
+.offer-card {
+  background-color: #fff; /* Card background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Clip overflow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  text-align: center; /* Center text */
+}
+
+.offer-card:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.offer-image {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.offer-title {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.offer-button {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #9b2c94;
+ 
+  color: #fff;
+  text-decoration: none; /* No underline */
+  border-radius: 5px; /* Rounded corners */
+  margin: 10px auto; /* Centered */
+  width: 80%; /* Button width */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.offer-button:hover {
+  background-color:#9a3b94; /* Darker shade on hover */
+}
+
+
+
+
+
+
+
+
+
+
+.categories-container {
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background */
+}
+
+.category-card {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.category-img {
+  width: 100%; /* Full width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Cover the image */
+}
+
+.category-info {
+  padding: 15px; /* Padding around the text */
+  text-align: center; /* Center text */
+}
+
+.tag {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+  margin-top: 10px; /* Space from image */
+}
